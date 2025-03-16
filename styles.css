@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+    /* Set Background Image */
+    background-image: url('clock.jpg'); 
+    background-size: cover;  /* Ensures the image covers the full screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Page Heading */
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #fff; /* White text for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Slight shadow for contrast */
+}
+
+/* Flexbox to place Clock & Stopwatch Side by Side */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;  /* Space between Clock & Stopwatch */
+    margin-top: 50px;
+}
+
+/* Clock & Stopwatch Styling */
+.clock, .stopwatch {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Lighter opacity for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+/* Time Text Styling */
+p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Button Styling */
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ec072d;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
